@@ -1,0 +1,84 @@
+---
+title       : Coursera Assignment 2
+subtitle    : November 23, 2014
+author      : Franco D.
+job         : Student
+framework   : io2012   # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets    : [bootstrap, quiz, shiny, interactive]
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+---
+
+## Introduction
+
+```{r echo = F, message = F, cache = F}
+opts_chunk$set(results = 'asis', comment = NA, message = F, tidy = F)
+```
+We developped an app plotting some of the probability density functions available in R.
+
+The parameters necessary for each distribution adapt to the distribution chosen. \
+
+For example, if you want to draw a normal curve, the app asks for mean and sd. I you wnat to draw a Poisson curve, it asks for lambda.
+
+Densities are drawn by generating observations (x) and calculating the density (d- function in R). 
+Cumulative densities curves work by providing the plot with a the p- function.
+
+--- .class #id 
+
+## Probability Density Functions
+
+R pseudo and parameters:
+
+    -     binom = size, prob
+    -     chisq = df, ncp
+    -     f     = df1, df2, ncp
+    -     norm  = mean, sd
+    -     hyper = m, n, k
+    -     pois  = lambda
+    -     t     = df, ncp
+    -     unif  = min, max
+
+---
+## URL 
+
+http://coursera.shinyapps.io/densities
+
+The next 2 slides are trying some of slidify new functionalities.
+
+---  &radio
+## R Base
+
+Which one is true about the Poisson distribution?
+
+1. Defined as the number of successes in a sequence of n independent yes/no experiments.
+2. Mean and Variance define the distribution, which is symetrical around the mean.
+3. Defined as as the ratio of two scaled chi-squared variates.
+4. The λ parameter is equal to the expected value of X and also to its variance.
+5. Defined as the sum of the squares of k independent standard normal random variables.
+
+*** .hint 
+tooth
+
+*** .explanation 
+cpaste("abc","qwe",sep="")
+
+---  &radio
+## R Base
+
+What is the base R function or operator that concatenate 2 character vectors?
+
+1. +
+2. _paste_
+3. glue
+4. stick
+5. concatenate
+
+*** .hint 
+tooth
+
+*** .explanation 
+cpaste("abc","qwe",sep="")
+
